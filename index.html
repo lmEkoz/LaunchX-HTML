@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <title>CakeHub</title>
+    </head>
+    <body>
+        <div>
+            <nav>
+                <ul>
+                    <li class="growAnim"><a href="index.html">HOME</a></li>
+                    <li class="growAnim"><a href="webapp/menu.html">MENU</a></li>
+                    <li class="growAnim"><a href="webapp/cart.html">CART</a></li>
+                    <li class="growAnim"><a href="webapp/contact.html">CONTACT</a></li>
+                    <li class="growAnim"><a href="#">lorem</a></li>
+                </ul>
+            </nav>        
+        </div>
+        <div>
+            <h1 class="centerHub">MAKE IT YOURS</h1>
+            <br><br>
+
+
+        </div>
+        <form method="get" action="#">
+            <table class="centerTable">
+                <caption>CakeHub Table</caption>
+                <tr>
+                    <th class="tableFormat">Cake Flavors</th>
+                    <th class="tableFormat">Prices</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Chocolate</th>
+                    <th class="tableFormat">$10</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Strawberry</th>
+                    <th class="tableFormat">$7</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Vanilla</th>
+                    <th class="tableFormat">$7</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Natural</th>
+                    <th class="tableFormat">$5</th>
+                </tr>
+            </table>
+            <br>
+
+            <h2 class="centerHub">Select a Flavor</h2>
+            <div class="centerSelect">                
+                <div class="centerDiv">
+                    <label class="decolabel">
+                    Chocolate 
+                    <input type="checkbox" class="decoCheck" name="chocolate" value="10">
+                    </label> 
+                    <label class="decolabel">
+                    Strawberry
+                    <input type="checkbox" class="decoCheck" name="strawberry" value="7">
+                    </label>
+                    <label class="decolabel">
+                    Vanilla
+                    <input type="checkbox" class="decoCheck" name="vanilla" value="7">
+                    </label>
+                    <label class="decolabel">
+                    Natural   
+                    <input type="checkbox" class="decoCheck" name="natural" value="5">
+                    </label>
+                </div>
+            </div>
+            <br><br>
+
+
+            <table class="centerTable">
+                <caption>Decorations</caption>
+                <tr>
+                    <th class="tableFormat">Decoration</th>
+                    <th class="tableFormat">Prices</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Choco-Chips</th>
+                    <th class="tableFormat">$4</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Whipped Creme</th>
+                    <th class="tableFormat">$2</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Candles</th>
+                    <th class="tableFormat">$1 each</th>
+                </tr>
+                <tr>
+                    <th class="tableFormat">Colored Chips</th>
+                    <th class="tableFormat">$3</th>
+                </tr>
+            </table>
+            <br>
+
+            <h2 class="centerHub">Select a Decoration</h2>
+            <div class="centerDiv">
+                <label class="decolabel">Choco-Chips  <input type="checkbox" class="decoCheck" name="choco" value="4"></label>
+                <label class="decolabel">Whipped Creme  <input type="checkbox" class="decoCheck" namee="whipped" value="2"></label>
+                <label class="decolabel">Candles  <input type="checkbox" id="candleCheck" class="decoCheck" name="candles" value="1">
+                    <input type="hidden" min="1" max="10" id="candleRange" step="1" oninput="checkSlider('rangeText','candleRange')">
+                    <label id='rangeText'> 0 </label>    
+                    <script type="text/javascript" >
+                        document.getElementById('candleCheck').onclick = function(){
+                            if (this.checked){
+                                document.getElementById('candleRange').type = 'range';
+                                document.getElementsByClassName('rangeText').textContent = this.value;  
+                            }else {
+                                document.getElementById('candleRange').type = 'hidden';
+                            }   
+                        }
+                        function checkSlider(rangeText,candleCheck) {
+                                document.getElementById('rangeText').innerHTML = document.getElementById('candleRange').value; 
+                        }
+                    </script>
+                </label>
+                <label class="decolabel">Colored Chips  <input type="checkbox" class="decoCheck" value="colored"></label>
+            </div>
+            <br><br>
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 1.3rem;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+li:hover {
+    font-size: 1.5rem;
+    background-color: #ffa31a;
+}
+
+div {
+    padding: 5px;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+.centerHub {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+table .tableFormat {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+th {
+    padding: 3px 10px ;
+}
+
+
+.centerTable {
+    margin: auto;
+    margin: auto;
+}
+
+.centerSelect {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-align-last: center;
+    padding: 10px;
+}
+
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.decolabel {
+    padding: 10px;
+}
+
+caption {
+    font-size: 1.3rem;
+}
+
+label{
+    padding: 5px;
+}
+
+
+/* 
+amarillo        #ffa31a	(255,163,26)
+gris claro      #808080	(128,128,128)
+gris            #292929	(41,41,41)
+gris  oscuro    #1b1b1b	(27,27,27)
+gris muy oscuro #ffffff	(255,255,255)
+*/
