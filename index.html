@@ -17,7 +17,7 @@
             <nav>
                 <ul>
                     <li class="growAnim"><a href="#">HOME</a></li>
-                    <li class="growAnim"><a href="webapp/menu.html">MENU</a></li>
+                    <li class="growAnim"><a href="webapp/menu.htmlS">MENU</a></li>
                     <li class="growAnim"><a href="webapp/cart.html">CART</a></li>
                     <li class="growAnim"><a href="webapp/contact.html">CONTACT</a></li>
                     <li class="growAnim"><a href="webapp/pastelero.html">PASTELERO</a></li>
@@ -120,8 +120,24 @@
             
 
             <div class="centerButton">
-                <button id="buttonOrder" type="button" onclick="createOrder">Submit</button>
+                <button id="buttonOrder" type="button" onclick="createOrder"><a href="#divOrder">Submit</a></button>
             </div>
         </form>
+        <br><br>
+
+        <div id="divOrder" hidden>
+            <table id="orderTable" class="centerTable">
+                <caption> Your Order</caption>
+                <tr>
+                    <th class="tableFormat">Flavor</th>
+                    <th class="tableFormat">Price</th>
+                    <th class="tableFormat">Decorations</th>
+                    <th class="tableFormat">Price</th> 
+                </tr>
+                <tr>
+                    
+                </tr>
+            </table>
+        </div>
     </body>
 </html>

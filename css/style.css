@@ -25,6 +25,10 @@ ul {
 li {
     float: left;
 }
+a {
+    text-decoration: none;
+    color: inherit
+}
 
 li a {
     display: block;

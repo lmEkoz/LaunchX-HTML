@@ -19,6 +19,9 @@ function checkSlider(rangeText,candleCheck) {
 //GENERAR ORDEN/PEDIDO
 document.getElementById('buttonOrder').onclick = function() {
     let subtotal = 0;
+
+    document.getElementById('divOrder').style.display = 'flex';
+
     flavors.forEach(flavor => {
         if (document.getElementById(flavor).checked){
             subtotal += parseInt(document.getElementById(flavor).value);
@@ -31,12 +34,8 @@ document.getElementById('buttonOrder').onclick = function() {
         }
     });
     console.log(subtotal)
-
-    window.location.assign('webapp/cart.html');
-    
-    document.write("<!DOCTYPE html>");
-    document.write("<html>");
-    document.write("</html>");
+        
+    //window.location.assign('webapp/cart.html');
 }
 
 
