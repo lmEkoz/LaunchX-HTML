@@ -5,13 +5,14 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        
+        <script src="/assets/main.js" defer></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <title>CakeHub</title>
     </head>
     <body>
+        <audio src="/assets/CakeHub.mp3" autoplay></audio>
         <div>
             <nav>
                 <ul>
@@ -60,19 +61,19 @@
                 <div class="centerDiv">
                     <label class="decolabel">
                     Chocolate 
-                    <input type="checkbox" class="decoCheck" name="chocolate" value="10">
+                    <input type="checkbox" id="chocolate" class="decoCheck" name="chocolate" value="10">
                     </label> 
                     <label class="decolabel">
                     Strawberry
-                    <input type="checkbox" class="decoCheck" name="strawberry" value="7">
+                    <input type="checkbox" id="strawberry" class="decoCheck" name="strawberry" value="7">
                     </label>
                     <label class="decolabel">
                     Vanilla
-                    <input type="checkbox" class="decoCheck" name="vanilla" value="7">
+                    <input type="checkbox" id="vanilla" class="decoCheck" name="vanilla" value="7">
                     </label>
                     <label class="decolabel">
                     Natural   
-                    <input type="checkbox" class="decoCheck" name="natural" value="5">
+                    <input type="checkbox" id="natural" class="decoCheck" name="natural" value="5">
                     </label>
                 </div>
             </div>
@@ -106,29 +107,21 @@
 
             <h2 class="centerHub">Select a Decoration</h2>
             <div class="centerDiv">
-                <label class="decolabel">Choco-Chips  <input type="checkbox" class="decoCheck" name="choco" value="4"></label>
-                <label class="decolabel">Whipped Creme  <input type="checkbox" class="decoCheck" namee="whipped" value="2"></label>
-                <label class="decolabel">Candles  <input type="checkbox" id="candleCheck" class="decoCheck" name="candles" value="1">
+                <label class="decolabel">Choco-Chips  <input type="checkbox" id="choco" class="decoCheck" name="choco" value="4"></label>
+                <label class="decolabel">Whipped Creme  <input type="checkbox" id="whipped" class="decoCheck" name="whipped" value="2"></label>
+                <label class="decolabel">Candles  <input type="checkbox" id="candle" class="decoCheck" name="candles" value="1">
                     <input type="hidden" min="1" max="10" id="candleRange" step="1" oninput="checkSlider('rangeText','candleRange')">
-                    <label id='rangeText'> 0 </label>    
-                    <script type="text/javascript" >
-                        document.getElementById('candleCheck').onclick = function(){
-                            if (this.checked){
-                                document.getElementById('candleRange').type = 'range';
-                                document.getElementsByClassName('rangeText').textContent = this.value;  
-                            }else {
-                                document.getElementById('candleRange').type = 'hidden';
-                            }   
-                        }
-                        function checkSlider(rangeText,candleCheck) {
-                                document.getElementById('rangeText').innerHTML = document.getElementById('candleRange').value; 
-                        }
-                    </script>
+                    <label id='rangeText'></label>
                 </label>
-                <label class="decolabel">Colored Chips  <input type="checkbox" class="decoCheck" value="colored"></label>
+                <label class="decolabel">Colored Chips  <input type="checkbox" id="colored" class="decoCheck" value="coloredChips" value="3"></label>
             </div>
+            <p class='greyOut'>Candles are a WIP :)</p>
             <br><br>
+            
 
+            <div class="centerButton">
+                <button id="buttonOrder" type="button" onclick="createOrder">Submit</button>
+            </div>
         </form>
     </body>
 </html>

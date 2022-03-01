@@ -98,11 +98,45 @@ label{
     padding: 5px;
 }
 
+.centerButton {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+button {
+    padding: 10px;
+}
+
+.greyOut {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #808080;
+}
+
+.white {
+    color: #ffffff;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.yellow {
+    color: #ffa31a;
+    font-size: 100px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    background-color: #000000;
+}
+
 
 /* 
 amarillo        #ffa31a	(255,163,26)
 gris claro      #808080	(128,128,128)
 gris            #292929	(41,41,41)
 gris  oscuro    #1b1b1b	(27,27,27)
-gris muy oscuro #ffffff	(255,255,255)
+blanco #ffffff	(255,255,255)
 */
