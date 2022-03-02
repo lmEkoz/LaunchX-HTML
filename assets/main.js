@@ -19,28 +19,25 @@ function checkSlider(rangeText,candleCheck) {
 //GENERAR ORDEN/PEDIDO
 document.getElementById('buttonOrder').onclick = function() {
     let subtotal = 0;
-    let checkedCake = [];
-
-    document.getElementById('divOrder').style.display = 'flex';
+    let checkedIng = [];
+    let checkedDeco = [];
 
     flavors.forEach(flavor => {
         if (document.getElementById(flavor).checked){
-            subtotal += parseInt(document.getElementById(flavor).value);
-            checkedCake.push(flavor);
-            checkedCake.push(parseInt(document.getElementById(flavor).value));
+            subtotal += parseInt(document.getElementById(flavor).value);  
+            checkedDeco.push(flavor, document.getElementById(flavor).value);
         }
     });
 
     decorations.forEach(decoration => {
         if (document.getElementById(decoration).checked){
             subtotal += parseInt(document.getElementById(decoration).value);
+            checkedDeco.push(decoration, document.getElementById(decoration).value);
         }
     });
     console.log(subtotal)
-        
-    document.getElementById('divOrder').innerHTML = checkedCake;
+    console.log(checkedIng)
+    console.log(checkedDeco)
 
-    //window.location.assign('webapp/cart.html');
+    //window.location.assign('pastelero.html');
 }
-
-

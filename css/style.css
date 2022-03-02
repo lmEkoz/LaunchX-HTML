@@ -126,6 +126,7 @@ button {
     font-size: 100px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
+    font-size: 2.5rem;
 }
 
 .yellow {
@@ -134,8 +135,12 @@ button {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     background-color: #000000;
+    font-size: 2.5rem;
 }
 
+textarea {
+    resize: none;
+}
 
 /* 
 amarillo        #ffa31a	(255,163,26)

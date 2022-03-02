@@ -4,10 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/css/style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="/assets/main.js" defer></script>
         <title>CakeHub</title>
     </head>
     <body>
@@ -22,10 +24,62 @@
                 </ul>
             </nav>        
         </div>
+        <br><br>
 
-        <div class="centerDiv">
-            <h1>NOTHING IN CART</h1>
-        </div>
+        <h1 class="centerHub"><span class="white">CAKE</span><span class="yellow">HUB</span></h1>
+        <br><br>
+        <form>
+            <div class="centerDiv">
+                <label>Name:  <input type="text" id="clientName" required></label>
+                <label>Telephone:  <input type="tel" id="clientName" required></label>
+                <label>E-mail:  <input type="email" id="clientName" required></label>
+            </div>
+            <div class="centerDiv">
+                <label>Desciption: <textarea id="orderDescription" cols="30" rows="10" required></textarea></label>
+            </div>
+            <br><br>
 
-    </body>
+
+            <h2 class="centerHub">Select a Flavor</h2>
+            <div class="centerSelect">                
+                <div class="centerDiv">
+                    <label class="decolabel">
+                    Chocolate 
+                    <input type="checkbox" id="chocolate" class="decoCheck" name="chocolate" value="10">
+                    </label> 
+                    <label class="decolabel">
+                    Strawberry
+                    <input type="checkbox" id="strawberry" class="decoCheck" name="strawberry" value="7">
+                    </label>
+                    <label class="decolabel">
+                    Vanilla
+                    <input type="checkbox" id="vanilla" class="decoCheck" name="vanilla" value="7">
+                    </label>
+                    <label class="decolabel">
+                    Natural   
+                    <input type="checkbox" id="natural" class="decoCheck" name="natural" value="5">
+                    </label>
+                </div>
+            </div>
+            <br><br>
+
+            <h2 class="centerHub">Select a Decoration</h2>
+            <div class="centerDiv">
+                <label class="decolabel">Choco-Chips  <input type="checkbox" id="choco" class="decoCheck" name="choco" value="4"></label>
+                <label class="decolabel">Whipped Creme  <input type="checkbox" id="whipped" class="decoCheck" name="whipped" value="2"></label>
+                <label class="decolabel">Candles  <input type="checkbox" id="candle" class="decoCheck" name="candles" value="1">
+                    <input type="hidden" min="1" max="10" id="candleRange" step="1" oninput="checkSlider('rangeText','candleRange')">
+                    <label id='rangeText'></label>
+                </label>
+                <label class="decolabel">Colored Chips  <input type="checkbox" id="colored" class="decoCheck" value="coloredChips" value="3"></label>
+            </div>
+            <p class='greyOut'>Candles are a WIP :)</p>
+            <br><br>
+            
+            <div class="centerDiv">
+                <button></button>
+                <button id="buttonOrder" type="submit" onclick="">Order</button>
+            </div>
+        </form>    
+    </body>        
 </html>
