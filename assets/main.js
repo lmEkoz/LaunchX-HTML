@@ -39,5 +39,10 @@ document.getElementById('buttonOrder').onclick = function() {
     console.log(checkedIng)
     console.log(checkedDeco)
 
-    //window.location.assign('pastelero.html');
+    window.location.assign('pastelero.html');
+
+    createOrderPastelero();
+}
+
+function createOrderPastelero(){
 }
