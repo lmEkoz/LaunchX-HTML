@@ -45,4 +45,36 @@ document.getElementById('buttonOrder').onclick = function() {
 }
 
 function createOrderPastelero(){
+    if(document.getElementById('chocolate').checked){
+        document.getElementById('0000').innerHTML = 'Chocolate';
+
+        }
+
+    if(document.getElementById('strawberry').checked){
+        document.getElementById('0010').innerHTML = 'Strawberry';
+        }
+
+    if(document.getElementById('vanilla').checked){
+        document.getElementById('0100').innerHTML = 'Vanilla';
+        }
+
+    if(document.getElementById('natural').checked){
+        document.getElementById('0110').innerHTML = 'Natural';
+    }
+
+    if(document.getElementById('choco').checked){
+        document.getElementById('1000').innerHTML = 'ChocoChips';
+        }
+
+    if(document.getElementById('whipped').checked){
+        document.getElementById('1010').innerHTML = 'Whipped Creme';
+        }
+
+    if(document.getElementById('candles').checked){
+        document.getElementById('1100').innerHTML = 'Candles';
+        }
+
+    if(document.getElementById('colored').checked){
+        document.getElementById('1110').innerHTML = 'ColoredChips';
+        }
 }
