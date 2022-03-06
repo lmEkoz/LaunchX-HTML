@@ -25,6 +25,7 @@ ul {
 li {
     float: left;
 }
+
 a {
     text-decoration: none;
     color: inherit
@@ -85,6 +86,7 @@ th {
 
 .centerDiv {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -149,6 +151,12 @@ textarea {
     font-weight: 300;
 }
 
+h4 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
 /* 
 amarillo        #ffa31a	(255,163,26)
 gris claro      #808080	(128,128,128)
